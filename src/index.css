@@ -1,0 +1,846 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url(/projects/project1/Images/header-image.jpg); */
+
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+/* ######################## html element styling ################ */
+html {
+    font-size: 62.5%;
+    /* ie.10px */
+}
+
+p,
+li {
+    font-size: 1.6rem;
+    /* margin==50% of font size */
+    margin-bottom: 0.5em;
+
+    letter-spacing: 0.15em;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+
+
+
+
+
+
+
+
+
+/* #################### utility classes ######################### */
+
+.bg-heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+
+.md-heading {
+    font-size: 2.2rem;
+
+}
+
+.text-red {
+    color: #e63946;
+}
+
+.text-light {
+    color: #f4f4f4;
+}
+
+.text-black {
+    color: #333;
+}
+
+.text-grey {
+    color: #555;
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    width: 90%;
+
+}
+
+
+
+/* ############################ Header styling ####################### */
+
+
+header.header {
+    height: 95vh;
+    border: 2px solid rgb(167, 47, 87);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(/Images/header-image.jpg);
+    /* background-position:center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+
+.nav-bar .logo {
+    color: aliceblue;
+    margin-top: 1.5rem;
+}
+
+header .nav-bar li {
+
+    display: inline-block;
+    list-style: none;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+header .nav-bar .logo {
+    float: left;
+
+}
+
+header .nav-bar .nav-items {
+    float: right;
+    margin-top: 3rem;
+}
+
+.nav-bar::after {
+    content: "";
+    clear: both;
+    display: block;
+
+
+}
+
+
+header .nav-bar a {
+    text-decoration: none;
+    font-size: 1.6rem;
+
+}
+
+
+.nav-bar a:link,
+.nav-bar a:visited {
+    color: #f4f4f4;
+}
+
+.nav-bar a:hover {
+    border: 2px solid #f4f4f4;
+    background-color: rgba(172, 143, 143, 0.253);
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+/* ################ header content styling############s */
+div.header-content {
+    /* background-color: blue; */
+    /* border: 2px solid red; */
+    text-align: center;
+    height: 40rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    background: linear-gradient(rgba(51, 50, 50, 0.1), rgba(15, 14, 14, 0.1));
+
+}
+
+.header-content a {
+    position: relative;
+    background-color: rgb(216, 210, 210);
+    border-radius: 4rem;
+
+    color: #ec520a;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid rgb(245, 139, 139);
+    padding: 2rem;
+    border-style: outset;
+
+    font-size: 2rem;
+    word-spacing: 0.5rem;
+    top: 10rem;
+    max-width: 1200;
+    margin: 0 auto;
+
+    width: 100%;
+
+
+
+}
+
+.header-content a:hover {
+    border: 2px solid #f4f4f4;
+    background-color: rgba(172, 143, 143, 0.253);
+    border-radius: 2rem;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+
+
+
+
+/* ########################## explores styling ################## */
+section.explores {
+    /* border: 2px solid #0c939c; */
+    background-color: #ddd;
+    padding: 10rem 0;
+    /* padding: 10rem ; */
+
+
+}
+
+.row {
+    /* border: 2px solid #42663e; */
+    height: 35rem;
+    background-color: rgba(231, 212, 170, 0.534);
+    /* color: white; */
+    box-shadow: 5px 5px 20px #aaa;
+    /* 5px 5px 10px  #636161 inset; */
+
+
+}
+
+.row1 {
+    margin-bottom: 10rem;
+
+}
+
+.img-box {
+    float: right;
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 100%;
+}
+
+.content-box {
+    float: left;
+    /* border: 1px solid #e63946;; */
+    width: 50%;
+    height: 100%;
+
+}
+
+
+
+
+
+
+.explores::after {
+    content: "";
+    clear: both;
+    display: block;
+
+
+}
+
+
+.img-box img,
+.content-box img {
+    width: 100%;
+    /* Set the image width to 100% of its container */
+    height: 100%;
+    /* Set the image height to 100% of its container */
+    object-fit: cover;
+    /* Scale the image to cover the entire container */
+    object-position: center;
+}
+
+.img-box p,
+.content-box p {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* text-align: center; */
+    padding: 3rem;
+}
+
+.explores .row h2 {
+    /* background-color: #e63946;; */
+    /* border: 1px solid #e63946;; */
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+.explores p a {
+    position: relative;
+    background-color: rgb(216, 210, 210);
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    /* border: 2px solid rgb(245, 139, 139); */
+    padding: 0.5rem;
+    border-style: inset;
+    border-radius: 3rem;
+    color: #ec520a;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+
+}
+
+
+.explores p a:hover {
+    border: 2px solid #f4f4f4;
+    background-color: rgba(201, 110, 35, 0.719);
+    border-radius: 2rem;
+    padding: 1rem;
+    color: #62046b;
+}
+
+
+/* ################## styling 3 div ############### */
+
+.main-div {
+    width: 100%;
+    /* border: 2px solid #a11c1c; */
+    /* background-color: #66d643; */
+    margin: 10rem 0;
+    box-shadow: 5px 5px 20px #aaa;
+}
+
+
+.main-div div {
+    width: 33.33%;
+    /* Adjust the width as needed */
+    /* margin: 10px; */
+    float: left;
+    /* background-color: #f0f0f0; */
+    /* border: 1px solid #000; */
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.main-div::after {
+    content: "";
+    clear: both;
+    display: block;
+
+}
+
+
+.back-black {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.main-div .second {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(233, 106, 46, 1) 0%, rgba(228, 18, 18, 0.884) 100%);
+
+
+}
+
+
+
+i.fa-user-check,
+i.fa-shuttle-van {
+    color: rgb(194, 57, 15);
+    font-size: 24px;
+
+    padding-bottom: 1rem;
+}
+
+.fa-hand-holding-dollar {
+    color: rgb(207, 206, 205);
+    font-size: 24px;
+
+    padding-bottom: 1rem;
+}
+
+/* ####################### footer styling################# */
+
+footer {
+    border: 1px solid #000;
+    background-color: #333;
+    text-align: center;
+    /* height: 25rem; */
+
+}
+
+footer img {
+    padding: 2rem;
+}
+
+/* ############### About page styling ########### */
+.about {
+    /* border: 1px solid #d11919; */
+    /* height: 100%; */
+    /* background-color: #ce7979; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* right:  50%; */
+    /* bottom:50% ; */
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.about h2 {
+    /* border-bottom: 3px solid  rgba(228, 18, 18); */
+    padding-bottom: 0.4rem;
+    font-size: 3rem;
+
+}
+
+.about h2::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid rgba(228, 18, 18);
+    width: 100%;
+}
+
+.about p.para {
+    text-align: center;
+}
+
+.services h1 {
+
+    /* color: #BA0021; */
+    color: #c10000;
+}
+
+.lists {
+    /* border: 1px solid #000; */
+    width: 100%;
+
+}
+
+.list-1,
+.list-2 {
+    float: left;
+    /* border: 1px solid #000; */
+    width: 50%;
+    margin-top: 1rem;
+
+
+
+}
+
+.lists::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.list-1 li,
+.list-2 li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.about .services {
+    /* margin-top: 1rem; */
+    /* border: 1px solid #000;  */
+    width: 100%;
+}
+
+.about .services div {
+    float: left;
+    /* border: 1px solid #000; */
+    width: 25%;
+    text-align: center;
+
+}
+
+.about .services::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.footer-about p {
+    color: #f4f4f4;
+    font-size: 1.6rem;
+    display: inline-block;
+    /* border: 1px solid #000; */
+    width: 70%;
+    margin-left: 1rem;
+}
+
+.footer-about {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(233, 106, 46, 1) 0%, rgba(228, 18, 18, 0.884) 100%);
+    /* border: 1px solid #000; */
+    margin-top: 3rem;
+    padding: 2rem 0;
+    font-weight: 500;
+}
+
+.footer-about a {
+    border: 1px solid #f4f4f4;
+    ;
+    display: inline-block;
+    margin-left: 9rem;
+    padding: 2rem;
+    color: #f4f4f4;
+    font-size: 2rem;
+    box-shadow: 5px 5px 10px 0px #474340;
+    border-radius: 1.5rem;
+    text-decoration: 0;
+
+}
+
+
+
+
+
+
+
+/* ####################### contact styling ############# */
+
+.contact {
+    /* border: 1px solid #cc1b1b; */
+    width: 100%;
+
+}
+
+.main-contact {
+    width: 100%;
+    /* border: 1px solid #24990d; */
+}
+
+.contact-form,
+.contact-details {
+    width: 50%;
+    /* Adjust the width as needed */
+
+    float: left;
+    /* background-color: hsla(0, 17%, 92%, 0.336); */
+    background-color: #e2a4a41a;
+    /* border: 1px solid #000; */
+    padding: 2rem;
+    /* text-align: center; */
+}
+
+.main-contact::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+
+
+.address-details i {
+    color: #e41212;
+    size: 500px;
+    width: 24px;
+    /* Adjust the value to increase or decrease the icon size */
+    height: 24px;
+}
+
+.image img {
+    width: 90%;
+    /* Set the image width to 100% of its container */
+    height: 90%;
+    /* Set the image height to 100% of its container */
+    object-fit: cover;
+    /* Scale the image to cover the entire container */
+    object-position: center;
+    box-shadow: 5px 5px 10px 0px #474340;
+
+}
+
+
+.contact-form form label,
+input {
+    font-size: 2rem;
+}
+
+.form-data form input,
+.contact textarea {
+    border-radius: 0.5rem;
+    border-style: double;
+    width: 100%;
+    font-family: cursive;
+    text-align: center;
+
+
+}
+
+.contact .submit-div {
+    width: 40%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 2.6rem;
+
+}
+
+.contact .submit-div input {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(240, 98, 63) 0%, rgba(236, 9, 9, 0.884) 100%);
+
+}
+
+.submit-div:hover {
+
+    padding: 1rem;
+}
+
+.main-contact {
+
+
+    padding: 30px;
+    height: 100vh;
+}
+
+.address-details span {
+    font-size: large;
+    font-weight: 500;
+}
+
+.contact-form {
+    /* background-color: #e99c0c; */
+    /* margin-left: 1rem; */
+    position: relative;
+    left: 1rem;
+
+}
+
+.contact-details {
+    position: relative;
+    right: 1rem;
+}
+
+.form-data h2::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #e41212;
+    width: 100%;
+}
+
+.form-data span {
+    color: #e41212;
+}
+
+/* .form-data form input:hover{
+   padding: 0.5rem;
+   background-color:  #e2a4a41a;
+   
+} */
+.contact textarea {
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+    height: 25rem;
+}
+
+.address-details div {
+    margin-top: 2rem;
+
+}
+
+/* ###################### Media Queries ############ */
+
+
+
+@media (max-width:501px) and (max-width:700px) {
+    html {
+        font-size: 50%;
+        /* //8px */
+
+    }
+
+    header .nav-bar .nav-items,
+    header .nav-bar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .row {
+        height: 100%;
+        width: 100%;
+    }
+
+    .row1 .img-box {
+        float: none;
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .row1 .content-box {
+        float: none;
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .row2 .img-box {
+        float: none;
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .row2 .content-box {
+        float: none;
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .main-div div {
+        float: none;
+        width: 100%;
+        box-shadow: 5px 5px 20px #aaa;
+    }
+
+    .main-div {
+        box-shadow: none;
+    }
+
+    .footer-about p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-about a {
+        text-align: center;
+        position: relative;
+        left: 6rem;
+    }
+
+    .contact-form,
+    .contact-details {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+}
+
+
+@media (orientation: landscape) and (max-height: 500px) {
+    .header {
+        height: 90vmax;
+    }
+}
+.form-container {
+    width: 400px;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+   
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #e26a1a;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #be5f12;
+  }
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #f3eded;
+    font-weight: 600;
+    width: 40%;
+    background: #e74219;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+  
+  
+  
+  
